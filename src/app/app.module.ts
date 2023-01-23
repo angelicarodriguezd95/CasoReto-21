@@ -8,6 +8,7 @@ import { PrincipalModule } from './principal/principal.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { UserinterceptorsService } from './services/userinterceptor.service';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +18,8 @@ import { UserinterceptorsService } from './services/userinterceptor.service';
     AppRoutingModule,
     PrincipalModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [
     {

@@ -1,14 +1,19 @@
-<h2 class=" text-center">Iniciar sesion</h2>
-<section class="container-sm p-4 w-50 mt-4 border rounded border-primary ">
-<section >
-<section >
-<label for="username">Username:</label>
-<input type="text" class="form-control" id="username">
-</section>
-<section >
-<label for="password">Password:</label>
-<input type="text" class="form-control" id="password">
-</section>
-<input class="btn btn-primary mt-4" (click)="login()" value="Log in">
-</section>
+
+<section class="container-sm p-4 w-50 mt-4 border rounded ">
+    <h2 class="text-center mt-4">Iniciar sesión</h2>
+  <form>
+    <div class="form-group">
+      
+      <label for="username" class="bold-label large-label">Nombre de usuario:</label>
+      <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario" required>
+   
+    </div>
+    <div class="form-group">
+      
+      <label for="password" class="bold-label large-label">Contraseña:</label>
+      <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+  
+    </div>
+    <button class="btn btn-primary mt-4" (click)="login()">Iniciar sesión</button>
+  </form>
 </section>

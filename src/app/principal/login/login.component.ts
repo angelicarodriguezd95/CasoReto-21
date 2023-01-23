@@ -10,6 +10,7 @@ import { AutenticacionService } from 'src/app/services/autenticacion.service';
 export class LoginComponent {
 username = '';
 password = '';
+hide: any;
 
   constructor(private autenticacion: AutenticacionService, private router: Router){}
 
@@ -19,9 +20,9 @@ login(){
 this.autenticacion.login();
 this.redireccion = this.autenticacion.urlUsuarioIntentaAcceder;
 this.autenticacion.urlUsuarioIntentaAcceder = '';
-this.router.navigate([this.redireccion]);
+this.router.navigate(['pos']);
 }
 
- 
+
 
 }
